@@ -1,32 +1,72 @@
 {
+    "width": 320,
+    "height": 180,
+    "framerate": 24,
     "images": [
         {
-            "name": "a1a0768df13e8539f7eb4c5e4ea5e807b0d76987.jpg",
-            "numFrames": 241
+            "name": "013fbb1e11c901267c4d5a8e0d95dae68710ce18.jpg",
+            "numFrames": 91
         },
         {
-            "name": "04394138712b33d16e789352b5c55d01c15aa5da.jpg",
-            "numFrames": 241
+            "name": "58b44f0f1d393401a767791dd28aef8541d9ba2e.jpg",
+            "numFrames": 91
         },
         {
-            "name": "5ceed8c1da797d54ec907a7fad53b4400579d2d0.jpg",
-            "numFrames": 241
+            "name": "bda53e627c750cd33c6f1f9bb9c57320cab4c974.jpg",
+            "numFrames": 91
         },
         {
-            "name": "95447777cacfcfc87ef076108b5be9e33086b545.jpg",
-            "numFrames": 241
+            "name": "3f20e2d4d0df8c7387232d4d1af4ec3e7b056b35.jpg",
+            "numFrames": 91
         },
         {
-            "name": "0f67b7978d80640f747125821ac8d89714793676.jpg",
-            "numFrames": 241
+            "name": "13a417c1696af695a9c2147f8b207e7337a91ff0.jpg",
+            "numFrames": 91
         },
         {
-            "name": "f23680fe6b20e9c5207dde29c41e5948bfe5f572.jpg",
-            "numFrames": 236
+            "name": "c9c64bdf06235dc1eb6e8e10822b63e2d6b5f428.jpg",
+            "numFrames": 91
+        },
+        {
+            "name": "7fa876d2e8f5f73b7413251c76b8a8387fff85bb.jpg",
+            "numFrames": 91
+        },
+        {
+            "name": "fe8b68842ad6c1fcd920cd60e63fd73fef7725ec.jpg",
+            "numFrames": 91
+        },
+        {
+            "name": "f5992364b409061cef8c686804c2838ac5961d39.jpg",
+            "numFrames": 91
+        },
+        {
+            "name": "1bf1a97c6bfead88aab687e8613aeddb98844466.jpg",
+            "numFrames": 91
+        },
+        {
+            "name": "a0312aa85253215f1d14aa48f136b730cd3d7331.jpg",
+            "numFrames": 91
+        },
+        {
+            "name": "2c370be40b9da93230d2c83c038f586270a62a74.jpg",
+            "numFrames": 91
+        },
+        {
+            "name": "e961d87cb8e9369e87e0b03bb0fbe55d85dae734.jpg",
+            "numFrames": 91
+        },
+        {
+            "name": "172b4f349653cfa1cf071c8b2dcb1c94913d7a7f.jpg",
+            "numFrames": 91
+        },
+        {
+            "name": "07c6d8878e935480f8dd565e5635a1ca6c8bde0c.jpg",
+            "numFrames": 91
+        },
+        {
+            "name": "33d0f3824f5da3020882929efe7d5bc993c3248d.jpg",
+            "numFrames": 76
         }
     ],
-    "framerate": 24,
-    "height": 180,
-    "width": 320,
     "numFrames": 1441
 }
