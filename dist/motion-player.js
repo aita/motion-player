@@ -107,7 +107,7 @@ MotionPlayer.prototype.play = function() {
     }
 
     var frameImageInfo = this.video.images[this.currentImageIndex];
-    if (this.imageFrame > frameImageInfo.numFrames) {
+    if (this.imageFrame >= frameImageInfo.numFrames) {
       this.imageFrame = 0;
       this.currentImageIndex++;
     }
@@ -121,6 +121,7 @@ MotionPlayer.prototype.play = function() {
           var ny = Math.floor(this.imageFrame / this.video.nx);
           var dx = nx * this.video.width;
           var dy = ny * this.video.height;
+          // console.log(this.frame, this.imageFrame, this.currentImageIndex, [nx,ny,dx,dy]);
           this.ctx.drawImage(
             image,
             dx, dy, this.video.width, this.video.height,
