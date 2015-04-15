@@ -116,9 +116,13 @@ MotionPlayer.prototype.play = function() {
       if (!this.paused) {
         var image = this.resourceLoader.get(frameImageInfo.name);
         if (image) {
+          var nx = (this.imageFrame % this.video.nx);
+          var ny = Math.floor(this.imageFrame / this.video.nx);
+          var dx = nx * this.video.width;
+          var dy = ny * this.video.height;
           this.ctx.drawImage(
             image,
-            0, this.imageFrame*this.video.height, this.video.width, this.video.height,
+            dx, dy, this.video.width, this.video.height,
             0, 0, this.canvas.width, this.canvas.height
           );
           this.time += interval;

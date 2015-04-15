@@ -1,72 +1,94 @@
 {
-    "width": 320,
-    "height": 180,
-    "framerate": 24,
     "images": [
         {
-            "name": "013fbb1e11c901267c4d5a8e0d95dae68710ce18.jpg",
-            "numFrames": 91
+            "numFrames": 48,
+            "name": "a70cdf5e9e63be0eb68f20c7b71cf371272dea5d.jpg"
         },
         {
-            "name": "58b44f0f1d393401a767791dd28aef8541d9ba2e.jpg",
-            "numFrames": 91
+            "numFrames": 48,
+            "name": "de1ae56338b469393abd5f12d262c009653c807b.jpg"
         },
         {
-            "name": "bda53e627c750cd33c6f1f9bb9c57320cab4c974.jpg",
-            "numFrames": 91
+            "numFrames": 48,
+            "name": "f6fd5f1c76ef2458faec882b8199dafa15737ba7.jpg"
         },
         {
-            "name": "3f20e2d4d0df8c7387232d4d1af4ec3e7b056b35.jpg",
-            "numFrames": 91
+            "numFrames": 48,
+            "name": "65bf5098be6324ebc23afae0e2880ed3d7b9efbe.jpg"
         },
         {
-            "name": "13a417c1696af695a9c2147f8b207e7337a91ff0.jpg",
-            "numFrames": 91
+            "numFrames": 48,
+            "name": "ef85ce9feb2c73cd0cd3a2b074b1abea6d89432c.jpg"
         },
         {
-            "name": "c9c64bdf06235dc1eb6e8e10822b63e2d6b5f428.jpg",
-            "numFrames": 91
+            "numFrames": 48,
+            "name": "d96a2ddc12e74c2013797e54ded1ad3d660aff47.jpg"
         },
         {
-            "name": "7fa876d2e8f5f73b7413251c76b8a8387fff85bb.jpg",
-            "numFrames": 91
+            "numFrames": 48,
+            "name": "e0a84a7e3cfa507cd2ff4b46328f789929e66bde.jpg"
         },
         {
-            "name": "fe8b68842ad6c1fcd920cd60e63fd73fef7725ec.jpg",
-            "numFrames": 91
+            "numFrames": 48,
+            "name": "411588b6e3ea43b6db0c5e0b743ed3a1efa0369e.jpg"
         },
         {
-            "name": "f5992364b409061cef8c686804c2838ac5961d39.jpg",
-            "numFrames": 91
+            "numFrames": 48,
+            "name": "cec8b8694d30248d5eff26f12fabb48b8de147ca.jpg"
         },
         {
-            "name": "1bf1a97c6bfead88aab687e8613aeddb98844466.jpg",
-            "numFrames": 91
+            "numFrames": 48,
+            "name": "d915549a3b9798b0e1579ba16ef920546fefc364.jpg"
         },
         {
-            "name": "a0312aa85253215f1d14aa48f136b730cd3d7331.jpg",
-            "numFrames": 91
+            "numFrames": 48,
+            "name": "5a785522058d46912976179f5d0948c210799f14.jpg"
         },
         {
-            "name": "2c370be40b9da93230d2c83c038f586270a62a74.jpg",
-            "numFrames": 91
+            "numFrames": 48,
+            "name": "a5259bca127c97fb02bb6e168d53bf1b2c6a4649.jpg"
         },
         {
-            "name": "e961d87cb8e9369e87e0b03bb0fbe55d85dae734.jpg",
-            "numFrames": 91
+            "numFrames": 48,
+            "name": "fd24f2ffa1151bf33754ed214f14b602a6a5120d.jpg"
         },
         {
-            "name": "172b4f349653cfa1cf071c8b2dcb1c94913d7a7f.jpg",
-            "numFrames": 91
+            "numFrames": 48,
+            "name": "37252f23db394a609b3ebb2543149e68b2b0bb2b.jpg"
         },
         {
-            "name": "07c6d8878e935480f8dd565e5635a1ca6c8bde0c.jpg",
-            "numFrames": 91
+            "numFrames": 48,
+            "name": "e03d186c2d204404ae0c6595262536edf146f694.jpg"
         },
         {
-            "name": "33d0f3824f5da3020882929efe7d5bc993c3248d.jpg",
-            "numFrames": 76
+            "numFrames": 48,
+            "name": "43e9577a47e6f2f55c1e6b112c6a55102ccb6ce7.jpg"
+        },
+        {
+            "numFrames": 48,
+            "name": "50090c4fbc0153b80f1e1e58f55629c764615818.jpg"
+        },
+        {
+            "numFrames": 48,
+            "name": "c9c8964aadf47be19d812e8c7556fb23ece9c0ff.jpg"
+        },
+        {
+            "numFrames": 48,
+            "name": "42d52ab04a7f17467ea8d6ca70687a8baa1e7c6a.jpg"
+        },
+        {
+            "numFrames": 48,
+            "name": "760f57db34d91355c751ae7d0f8a047cd3207eea.jpg"
+        },
+        {
+            "numFrames": 3,
+            "name": "b73c966d13db6d1b9f5f15766284cd9305cc9a67.jpg"
         }
     ],
-    "numFrames": 1441
+    "width": 160,
+    "numFrames": 963,
+    "ny": 8,
+    "height": 120,
+    "nx": 6,
+    "framerate": 16
 }

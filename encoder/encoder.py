@@ -23,32 +23,44 @@ def is_image(path):
     return mime_type.split('/')[0] == 'image'
 
 
-def create_video_data(out, image_paths, N=2):
-    all_images = [Image.open(path) for path in image_paths]
-    width, height = all_images[0].size
+def create_video_data(out, image_paths, framerate):
+    frame_images = [Image.open(path) for path in image_paths]
+    width, height = frame_images[0].size
 
     video_images = []
-    for i in range(N):
-        l = int(len(all_images) / N) + 1
-        images = all_images[i*l:(i+1)*l]
-        video_image = Image.new('RGB', (width, height*len(images)))
-        for i, image in enumerate(images):
-            video_image.paste(image, (0, i*height))
+    n = 0
+    nx, ny = int(1024/width), int(1024/height)
+    x, y = 0, 0
+    video_image = Image.new('RGB', (1024, 1024))
+    while True:
+        if x >= nx:
+            x, y = 0, y+1
+        if y >= ny or n >= len(frame_images):
+            m = hashlib.sha1()
+            m.update(video_image.tobytes())
+            image_name = '{}.jpg'.format(m.hexdigest())
+            video_image.save(os.path.join(os.path.dirname(out), image_name))
+            video_images.append({
+                'name': image_name,
+                'numFrames': y*nx+x,
+            })
+            x, y = 0, 0
+            video_image = Image.new('RGB', (1024, 1024))
+        if n >= len(frame_images):
+            break
 
-        m = hashlib.sha1()
-        m.update(video_image.tobytes())
-        image_name = '{}.jpg'.format(m.hexdigest())
-        video_image.save(os.path.join(os.path.dirname(out), image_name))
-        video_images.append({
-            'name': image_name,
-            'numFrames': len(images),
-        })
+        image = frame_images[n]
+        video_image.paste(image, (x*width, y*height))
+        x += 1
+        n += 1
 
     video_info = {
+        'nx': nx,
+        'ny': ny,
         'width': width,
         'height': height,
-        'numFrames': len(all_images),
-        'framerate': 24,
+        'numFrames': len(frame_images),
+        'framerate': framerate,
         'images': video_images,
     }
     with open(out, 'w') as fp:
@@ -65,8 +77,8 @@ def main():
     images = list(filter(is_image, path_list))
 
     out = sys.argv[2]
-    N = int(sys.argv[3])
-    create_video_data(out, images, N)
+    framerate = int(sys.argv[3])
+    create_video_data(out, images, framerate)
 
 
 if __name__ == '__main__':
